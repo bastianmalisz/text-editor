@@ -4,7 +4,7 @@ body, html{
     padding: 0;
     font-size: 16px;
     box-sizing: border-box; 
-    background: url(back3.jpg);
+    background: url("../images/back3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -93,7 +93,7 @@ display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 2;
-    background: url(back2.jpg);
+    background: url("../images/back2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -156,7 +156,7 @@ select{
     
 }
 .notes-controllers-controller-bold{
-    background: url(bold2-icon.png);
+    background: url("../images/bold2-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -168,7 +168,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-italic{
-    background: url(italic2-icon.png);
+    background: url("../images/italic2-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -179,7 +179,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-center{
-    background: url(center2-icon.png);
+    background: url("../images/center2-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -190,7 +190,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-hilite{
-    background: url(hlite-icon.png);
+    background: url("../images/hlite-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -201,7 +201,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-font-size{
-    background: url(font-size-icon.png);
+    background: url("../images/font-size-icon.png");
     background-size:50% 80%;
     background-repeat: no-repeat;
     background-position: top;
@@ -212,7 +212,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-underline{
-    background: url(underline-icon.png);
+    background: url("../images/underline-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -223,7 +223,7 @@ select{
     cursor: pointer;
 }
 .notes-controllers-controller-font-name{
-    background: url(font-change-icon.png);
+    background: url("../images/font-change-icon.png");
     background-size:50% 80%;
     background-repeat: no-repeat;
     background-position: top;
@@ -234,7 +234,7 @@ select{
     cursor: pointer;
 }
 .notes-download-bar-download{
-    background: url(download-icon.png);
+    background: url("../images/download-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -244,7 +244,7 @@ select{
     cursor: pointer;
 }
 .notes-download-bar-save{
-    background: url(save-icon.png);
+    background: url("../images/save-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,7 +254,7 @@ select{
     cursor: pointer;
 }
 .notes-download-bar-remove{
-    background: url(remove-icon.png);
+    background: url("../images/remove-icon.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
