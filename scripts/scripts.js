@@ -1,5 +1,5 @@
- // LISTENER NA PRZYCISKI FUNKCJI
- document.querySelector('.notes-controllers').addEventListener('click', function(e){
+// LISTENER NA PRZYCISKI FUNKCJI
+ document.querySelector('.notes-controllers').addEventListener('click', (e)=>{
     console.log(e.target.className);
     switch(e.target.className){
         case "notes-controllers-controller notes-controllers-controller-bold":
@@ -67,10 +67,10 @@ hiddenElement.setAttribute('download', "text");
 hiddenElement.style.display = 'none';
 document.body.appendChild(hiddenElement);
 
-hiddenElement.click();  
+hiddenElement.click();
 
 }
-document.querySelector('.notes-download-bar-download').addEventListener('click',function(){
+document.querySelector('.notes-download-bar-download').addEventListener('click',()=>{
 download();
 });
 
@@ -86,7 +86,7 @@ setTimeout(function(){
     document.querySelector(".saved").classList.remove("saved-big");
 }, 1100);
 }
-document.querySelector('.notes-download-bar-save').addEventListener("click",function(){
+document.querySelector('.notes-download-bar-save').addEventListener("click",()=>{
 saveStorage();
 })
 
@@ -108,6 +108,6 @@ if(confirm("Czy napewno chcesz usunąć edytowany tekst i wszystkie jego zapisan
         return;
     }
 }
-document.querySelector('.notes-download-bar-remove').addEventListener("click",function(){
+document.querySelector('.notes-download-bar-remove').addEventListener("click",()=>{
 removeStorage();
 })
