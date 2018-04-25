@@ -32,32 +32,32 @@
 
 // DEFINIOWANIE FUNKCJI
 
-function textBold(){
+let textBold = ()=>{
 console.log("DZIEJE");
 document.execCommand('bold',false,'');
 }
-function fontSize(fontSize){
+let fontSize = (fontSize)=>{
 document.execCommand('fontSize',false,fontSize);
 }
-function fontName(fontName){
+let fontName = (fontName)=>{
 document.execCommand('fontName',false,fontName);
 }
-function italic(){
+let italic = ()=>{
 document.execCommand('italic',false,'');
 }
-function hiliteColor(){
+let hiliteColor = ()=>{
 document.execCommand('hiliteColor',false,'yellow');
 }
-function centring(){
+let centring = ()=>{
 document.execCommand('justifyCenter',false,'');
 }
-function underline(){
+let underline = ()=>{
 document.execCommand('underline',false,'');
 }
 
 // POBIERANIE CALEGO PLIKU
 
-function download(){
+let download = ()=>{
 let wholeText = document.querySelector(".notes-writting-place").textContent;
 
 //nie chce linka, tylko odnosnik po kliknieciu diva, wiec tworze niewidoczny element
@@ -76,13 +76,13 @@ download();
 
 // ZAPISYWANIE PLIKU USERA DO LOCALSTORAGE
 
-function saveStorage(){
+let saveStorage = ()=>{
 let wholeText = document.querySelector(".notes-writting-place").textContent;
 
 localStorage.setItem("saved-text",wholeText);
 // box wyskakujacy i informujacy o zapisaniu kopii dokumentu
 document.querySelector(".saved").classList.add("saved-big");
-setTimeout(function(){
+setTimeout(()=>{
     document.querySelector(".saved").classList.remove("saved-big");
 }, 1100);
 }
@@ -92,7 +92,7 @@ saveStorage();
 
 // LADOWANIE NA POCZATKU ZAPISANEJ WERSJI LOCALSTORAGE
 
-function loadStorage(){
+let loadStorage = ()=>{
 let savedText = localStorage.getItem("saved-text");
 document.querySelector(".notes-writting-place").innerHTML = savedText;
 }
@@ -100,7 +100,7 @@ document.onload = loadStorage();
 
 // USUWANIE STORAGE
 
-function removeStorage(){
+let removeStorage = ()=>{
 if(confirm("Czy napewno chcesz usunąć edytowany tekst i wszystkie jego zapisane wersje?")){
     localStorage.removeItem('saved-text');
     document.querySelector(".notes-writting-place").innerHTML= "";
